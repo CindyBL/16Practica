@@ -32,7 +32,7 @@ namespace Practica16
         {
            
 
-            
+            ///Graficar
 
             
         }
