@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica16.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            
+        </Grid.RowDefinitions>
+        <Button Text="Manejar actuadores" BackgroundColor="Blue" TextColor="White" Grid.Row="1" WidthRequest="200" Clicked="Button_Clicked"> </Button>
+        <Button Text="Graficar" BackgroundColor="Blue" TextColor="White" Grid.Row="2" WidthRequest="200" Clicked="Button_Clicked_1"></Button>
+    </Grid>
+
+
+</ContentPage>

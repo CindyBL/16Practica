@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica16.Actuadores">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            
+        </Grid.RowDefinitions>
+        <Button Text="Encender LED" BackgroundColor="Green" TextColor="White" x:Name="btnEncenderLed" Clicked="btnEncenderLed_Clicked" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Button Text="Apagar LED" BackgroundColor="Red" TextColor="White" x:Name="btnApagarLed" Clicked="btnApagarLed_Clicked" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2"/>
+        
+
+        <Label Text="Angulo:" Grid.Column="0" Grid.Row="1"/>
+        <Entry Keyboard="Numeric" x:Name="entAngulo" Grid.Column="1" Grid.Row="1"/>
+        <Button Text="Mover Servo" BackgroundColor="Blue" TextColor="White" x:Name="btnMoverServo"  Clicked="btnMoverServo_Clicked" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+   
+        <Button Text="Encender Foco" BackgroundColor="Green" TextColor="White" x:Name="btnEncenderFoco" Clicked="btnEncenderFoco_Clicked" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Button Text="Apagar Foco" BackgroundColor="Red" TextColor="White" x:Name="btnApagarFoco" Clicked="btnApagarFoco_Clicked" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+        <ListView x:Name="lstMensajes" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4"/>
+        
+
+
+
+    </Grid>
+</ContentPage>
